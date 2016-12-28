@@ -49,3 +49,5 @@ http://allaboutee.com/2014/12/27/esp8266-arduino-code-and-circuit/
 Send Data From Webpage to Arduino
 
 http://allaboutee.com/2015/01/02/esp8266-arduino-led-control-from-webpage/
+
+https://medium.com/@nowir3s/getting-started-with-esp8266-875fb54441d6?swoff=true#.gsqifpo54
