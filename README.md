@@ -8,6 +8,14 @@ In Arduino upload empty bare project, and use this AT commands via serial monito
 | TX | TX |
 | RX | RX |
 
+Or use the scatch and then connect
+
+## wires
+| Arduino | ESP8266 |
+| ------- |:-------:|
+| 2 | TX |
+| 3 | RX |
+
 ## commands 
 (check this site http://www.pridopia.co.uk/pi-doc/ESP8266ATCommandsSet.pdf)
 
