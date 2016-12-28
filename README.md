@@ -12,12 +12,15 @@ In Arduino upload empty bare project, and use this AT commands via serial monito
 - AT+RST
 - AT+CWMODE=1
 - AT+CWMODE?
-- AT+CIFSR
+- AT+CIFSR // GET IP (ex. 10.0.0.7)
 - AT+CWJAP= “Wi-FiNetwork”,“Password”
 - AT+CIPMUX=1
 - AT+CIPSERVER=1,80
 
-Response:
+## browser
+open http://10.0.0.7
+
+## response serial monitor:
 ```
 +IPD,0,410:GET / HTTP/1.1
 Host: 10.0.0.7
