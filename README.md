@@ -8,7 +8,9 @@ In Arduino upload empty bare project, and use this AT commands via serial monito
 | TX | TX |
 | RX | RX |
 
-## commands
+## commands 
+(check this site http://www.pridopia.co.uk/pi-doc/ESP8266ATCommandsSet.pdf)
+
 - AT+RST
 - AT+CWMODE=1
 - AT+CWMODE?
