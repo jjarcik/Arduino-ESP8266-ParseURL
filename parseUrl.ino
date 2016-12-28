@@ -17,7 +17,7 @@ void setup()
   Serial.println("AT+CIFSR");
   sendData("AT+CIFSR\r\n",5000,DEBUG); // get ip address
 
-  Serial.println("AT+CWJAP=\"Doma WIFI\",\"00024D2B8315A\"");
+  Serial.println("AT+CWJAP=\"SSID\",\"PASSWORD\"");
   Serial.println("wait 20 seconds");
   sendData("AT+CWJAP=\"Doma WIFI\",\"00024D2B8315A\"\r\n",20000,DEBUG); // get ip address
 
@@ -40,7 +40,15 @@ void loop()
       // The esp has data so display its output to the serial window 
       char c = esp8266.read(); // read the next character.
       Serial.write(c);
-    }  
+    }
+
+    Serial.println("AT+CIPSEND=0,5");
+    sendData("AT+CIPSEND=0,5\r\n",1000,DEBUG);  
+    Serial.println("hello");
+    sendData("hello\r\n",1000,DEBUG);  
+    Serial.println("AT+CIPCLOSE=0");
+    sendData("AT+CIPCLOSE=0\r\n",1000,DEBUG);
+    
   }
 }
  
